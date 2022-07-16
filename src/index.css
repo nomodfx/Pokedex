@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap')
+body{
+	margin: 0;
+	font-family: 'Times New Roman', serif;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+
+code{
+	font-family: 'Times New Roman', serif;
+}
+
+.rock{
+	background-image: linear-gradient(to bottom, #a3766a 0%, #B6A136 100%);
+}
+
+.ghost{
+	background-image: linear-gradient(to bottom, #cfd9df 0%, #735797 100%);
+}
+
+.electric{
+	background-image: linear-gradient(to bottom, #bfb834 0%, #F7D02C 100%);
+}
+
+.bug{
+	background-image: linear-gradient(to bottom, #cfed61 0%, #A6B91A 100%);
+}
+
+.poison{
+	background-image: linear-gradient(to bottom, #df89b5 0%, #A33EA1 100%);
+}
+
+.normal{
+	background-image: linear-gradient(to bottom, #f2c07e 0%, #A8A77A 100%);
+}
+
+.fairy{
+	background-image: linear-gradient(to bottom, #ff9a9e 0%, #fecfef 99%, #D685AD 100%);
+}
+
+.fire{
+	background-image: linear-gradient(to bottom, #f2977e 0%, #EE8130 100%);
+}
+
+.grass{
+	background-image: linear-gradient(to bottom, #79d46e 0%, #7AC74C 100%);
+}
+
+.water{
+	background-image: linear-gradient(to bottom, #89f7fe 0%, #6390F0 100%);
+}
+
+.ground{
+	background-image: linear-gradient(to bottom, #772f1a 0%, #E2BF65 74%);
+}
+
+.fighting{
+	background-image: linear-gradient(to bottom, #C22E28 0%, C22E28 100%);
+}
+
+.app-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 3rem 1rem;
+}
+
+.app-container h1{
+	width: 0ch;
+	color: rgb(38, 16, 236);
+	overflow: hidden;
+	white-space: nowrap;
+	animation: text 2s steps(15) infinite alternate;
+}
+
+@keyframe text{
+	0%{
+		width: 0ch;
+	}
+	50%{
+		width: 15ch;
+		color:rgb(218, 55, 5);
+	}
+}
+
+.pokemon-container{
+	display: flex;
+	flex-direction: column;
+	align-item: center;
+	justify-content: center;
+}
+
+.all-container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.thumb-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1.5rem 0.2rem;
+	margin: 0.3rem;
+	border: 1px solid #efefef;
+	border-radius: 2rem;
+	min-width: 160px;
+	text-align: center;
+	box-shadow: 0 3px 15px rgba(0,0,0,0.089);
+}
+
+.thumb-container: hover{
+	margin: 0.7rem 0;
+}
+
+h3{
+	margin-bottom: 02.rem;
+}
+
+.thumb-container .number{
+	border-radius: 1rem;
+	padding: 0.2rem 0.4rem;
+	background-color: rgba(255,255,255,0.3);
+}
+
+.thumb-container img{
+	width: 120px;
+	height: 120px;
+}
+
+.thumb-container small{
+	text-transform: capitalize;
+}
+
+.detail-wrapper{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.detail-wrapper button{
+	color: rgb(22,22,22);
+	padding: .5rem;
+	margin-top: 1rem;
+	border: none;
+	border-radius: 0.2rem;
+	cursor: pointer;
+	background: rgba(0,0,0,0.185);
+}
+
+.load-more{
+	background-color: #76daff;
+	background-image: linear-gradient(315deg, #76daff 0%, #fcd000 74%);
+	border-radius: 6px;
+	border: 1px solid #c6c6c6;
+	color: #444;
+	padding: 0.5rem 1.5rem;
+	min-width: 20%;
+	margin-top: 1rem;
+	
+	font-family: 'Times New Roman', serif;
+}
+
+button:hover{
+	background-color: #ff0000;
+	background-image: linear-gradient(315deg, #ff0000 0%, #ffed00 74%);
+}
+
+.pokeinfo{
+	margin: 0 25px;
+	
+	font-family: 'Times New Roman', serif;
+	background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+}
+
+.pokeinfo:hover{
+	background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+}
+
+h3{
+	text-decoration: underline;
+}
